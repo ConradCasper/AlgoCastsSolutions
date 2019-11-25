@@ -7,24 +7,48 @@
 
 
 function maxChar(str) {
-    let chars = {};
-
+    let charMap = {};
+    let count = 0;
+    let maxChar = '';
+    
     for (let char of str){
-        chars[char] = chars[char]++ || 1
+        charMap[char] = charMap[char]++ || 1
     }
 
-    let count = 0
-
-    for (const char in chars){
-        if (chars[char] > count){
-            count = chars[char]
+    
+    for (let char in charMap){
+        if (charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
         }
     }
 
-    for (const char in chars){
-        if (chars[char] === count){
-            return char
-        }
-    }
+    return maxChar
 
 }
+
+
+// function maxChar(str) {
+//     let chars = {};
+//     let count = 0
+
+    
+//     for (let char of str){
+//         chars[char] = chars[char]++ || 1
+//     }
+
+    
+
+//     for (const char in chars){
+//         if (chars[char] > count){
+//             count = chars[char]
+//         }
+//     }
+
+//     for (const char in chars){
+//         if (chars[char] === count){
+//             return char
+//         }
+//     }
+
+// }
