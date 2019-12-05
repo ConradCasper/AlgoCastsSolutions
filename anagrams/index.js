@@ -7,3 +7,30 @@
 //   anagrams('rail safety', 'fairy tales') --> True
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
+
+
+function anagrams(stringA, stringB) {
+    const aCharMap = buildCharMap(stringA.replace(/[^\w]/g, "").toLowerCase())
+    const bCharMap = buildCharMap(stringB.replace(/[^\w]/g, "").toLowerCase())
+
+    if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length){
+        return false
+    }
+
+    for (let char in aCharMap){
+        if (aCharMap[char] !== bCharMap[char]){
+            return false
+        }
+    }
+    return true
+}
+
+function buildCharMap(str){
+    let charMap = {}
+
+    for (let char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+
+    return charMap
+}
