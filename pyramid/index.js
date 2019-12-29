@@ -28,6 +28,7 @@ function pyramid(n) {
                 level += " ";
             }
         }
+        console.log(level)
 
     }
 }
