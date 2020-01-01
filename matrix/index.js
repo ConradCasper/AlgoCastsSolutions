@@ -27,4 +27,14 @@ function matrix(n) {
     let endColumn = n - 1;
     let startRow = 0;
     let endRow = n - 1;
+
+    while(startColumn <= endColumn && startRow <= endRow){
+        // top row
+        for (let i = startColumn; i <= endColumn; i++){
+            results[startRow][i] = counter;
+            counter++;
+        }
+        startRow++;
+    }
+            
 }
