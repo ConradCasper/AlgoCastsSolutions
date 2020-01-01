@@ -22,5 +22,5 @@ function matrix(n) {
         results.push([])
     }
 
-    
+    let counter = 1;
 }
