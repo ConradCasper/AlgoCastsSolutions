@@ -15,4 +15,12 @@
 //     [11, 16, 15, 6],
 //     [10,  9,  8, 7]]
 
-function matrix(n) {}
+function matrix(n) {
+    let results = [];
+
+    for (let i = 0; i < n; i++){
+        results.push([])
+    }
+
+    
+}
