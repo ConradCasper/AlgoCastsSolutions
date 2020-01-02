@@ -46,7 +46,7 @@ function matrix(n) {
             results[endRow][i] = counter;
             counter++;
         }
-        endRow++;
+        endRow--;
     }
             
 }
