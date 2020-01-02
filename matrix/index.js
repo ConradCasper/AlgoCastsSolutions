@@ -41,6 +41,12 @@ function matrix(n) {
             counter++;    
         }
         endColumn--;
+        // bottom row
+        for (let i = endColumn; i >= startColumn; i--){
+            results[endRow][i] = counter;
+            counter++;
+        }
+        endRow++;
     }
             
 }
