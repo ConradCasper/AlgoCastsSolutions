@@ -40,6 +40,7 @@ function matrix(n) {
             results[i][endColumn] = counter;
             counter++;    
         }
+        endColumn--;
     }
             
 }
