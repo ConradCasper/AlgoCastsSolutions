@@ -9,21 +9,46 @@
 //   fib(4) === 3
 
 function fib(n) {
-    
-    if (n === 0){
-        return 0;
-    } else if (n === 1 || n === 2){
-        return 1;
+    if (n < 2){
+        return n
     }
 
-    let sequence = [0, 1, 1];
-
-    for (let i = 3; i <= n; i++){
-        sequence.push(sequence[i - 1] + sequence[i - 2])
-    }
-
-    return sequence[n]
-
+    return fib(n - 1) + fib(n - 2)
 }
+
+
+
+
+// function fib(n) {
+    
+//     if (n === 0){
+//         return 0;
+//     } else if (n === 1 || n === 2){
+//         return 1;
+//     }
+
+//     let sequence = [0, 1];
+
+//     for (let i = 2; i <= n; i++){
+//         sequence.push(sequence[i - 1] + sequence[i - 2])
+//     }
+
+//     return sequence[n]
+
+// }
+
+
+// function fib(n) {
+//     const result = [0, 1];
+
+//     for (let i = 2; i <= n; i++){
+//         const a = result[i - 1];
+//         const b = result[i - 2];
+
+//         result.push(a + b)
+//     }
+
+//     return result[n]
+// }
     
 
