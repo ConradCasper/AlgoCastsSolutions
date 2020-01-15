@@ -37,5 +37,5 @@ function weave(sourceOne, sourceTwo) {
         }
     }
 
-    return q;
+    return q
 }
