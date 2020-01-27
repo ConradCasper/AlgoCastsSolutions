@@ -8,7 +8,7 @@
 //   s.push(1);
 //   s.push(2);
 //   s.pop(); // returns 2
-//   s.pop(); // returns 
+//   s.pop(); // returns 1
 
 class Stack {
     constructor() {
