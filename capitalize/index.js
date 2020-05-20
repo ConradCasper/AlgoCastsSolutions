@@ -8,15 +8,7 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 function capitalize(str) {
-    let capitalizedString = str[0].toUpperCase();
-    for (let i =1; i < str.length; i++) {
-        if (str[i - 1] === ' '){
-            capitalizedString += str[i].toUpperCase();
-        } else {
-            capitalizedString += str[i];
-        }
-    }
-    return capitalizedString;
+    
 }
 
 
