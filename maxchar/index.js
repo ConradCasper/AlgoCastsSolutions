@@ -11,11 +11,7 @@ function maxChar(str) {
     let count = 0;
 
     for (let char of str) {
-        if(charMap[char]){
-          charMap[char]++
-        } else {
-          charMap[char] = 1;
-        }
+        charMap[c] ? charMap[c]++ : charMap[c] = 1;
     }
     
     for (const hello in charMap){
